@@ -6,7 +6,7 @@
 #    By: jumiguel <jumiguel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/19 15:37:32 by jumiguel          #+#    #+#              #
-#    Updated: 2016/11/20 18:09:31 by jumiguel         ###   ########.fr        #
+#    Updated: 2016/11/21 17:20:00 by aaudiber         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ clean:
 	@make clean -C ./libft
 
 fclean:
+	@make clean
 	@/bin/echo "-----Fcleaning-----"
 	@/bin/rm -f $(NAME)
 	@make fclean -C ./libft

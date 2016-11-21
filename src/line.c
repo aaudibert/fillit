@@ -6,7 +6,7 @@
 /*   By: jumiguel <jumiguel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 18:10:08 by jumiguel          #+#    #+#             */
-/*   Updated: 2016/11/21 14:28:49 by jumiguel         ###   ########.fr       */
+/*   Updated: 2016/11/21 18:35:39 by aaudiber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,9 @@ int		check_line(char *buf)
 	i = 0;
 	while (buf[i])
 	{
-		if (buf[i + 19] != '\n' && buf[i + 19] != '\0')
+		if (buf[i + 20] != '\n' && buf[i + 20] != '\0')
 			return (1);
-		i += 20;
-	/*	ft_putchar(buf[i]);
-		ft_putnbr(i);
-		ft_putchar('\n');*/
+		i += 21;
 	}
 	return (0);
 }

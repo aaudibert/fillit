@@ -6,7 +6,7 @@
 /*   By: jumiguel <jumiguel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 15:42:22 by jumiguel          #+#    #+#             */
-/*   Updated: 2016/11/20 18:13:01 by jumiguel         ###   ########.fr       */
+/*   Updated: 2016/11/21 18:36:09 by aaudiber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,8 +78,7 @@ int				ft_formsvalid(char *buf, t_struct *global)
 			if (buf[global->i + 1] == '\0' && buf[global->i - 1] == '\n')
 				return (1);
 		}
-		if (global->counti == 20 || global->nbrhash + 4 == 20 || (global->i > 19
-					&& buf[global->i - 20] == '\n'))
+		if (global->counti == 20 || global->nbrhash + 4 == 20)
 		{
 			if (ft_testlength(global) != 0)
 				return (1);
